@@ -1,0 +1,207 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+
+// --------------------
+/* --- home main --- */
+// --------------------
+
+.home {
+    font-optical-sizing: auto;
+    background-color: $clr-bg-body;
+    font-family: $font-family-RedHatDisplay;
+}
+
+.logo__img,
+.hero__img {
+    background-color: transparent;
+}
+
+.container {
+    max-width: em(375, 16);
+    margin-inline: auto;
+    margin-top: em(50, 16);
+    // background-color: gray;
+    overflow: hidden;
+}
+
+.logo {
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: em(54, 16);
+}
+
+.hero {
+    text-align: center;
+
+    &__img {
+        max-width: 112%;
+        margin-left: -5%;
+    }
+}
+
+.content {
+    padding-inline: em(24, 16);
+    margin-top: em(48, 16);
+    text-align: center;
+
+    h1 {
+        font-size: var(--H1); // 44px
+        line-height: em(44, 40);
+        @extend %weight-900;
+        color: $clr-txt-H1;
+    }
+
+    h2 {
+        font-size: var(--H2); //32px
+        line-height: em(36, 32);
+        @extend %weight-900;
+        color: $clr-txt-H2;
+    }
+
+    h3 {
+        font-size: var(--H3); //16px
+        line-height: em(26, 16);
+        @extend %weight-900;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $clr-txt-H3;
+        margin-bottom: em(24, 16);
+    }
+
+    p {
+        font-size: var(--par); //16px
+        line-height: em(26, 16);
+        @extend %weight-500;
+        color: $clr-txt-par;
+        margin-block: em(24, 16) em(32, 16);
+    }
+    & p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+
+    font-size: var(--btn); //16px
+    line-height: em(26, 16);
+    @extend %weight-900;
+    color: $clr-txt-btn;
+
+    border-radius: em($br-btn, 16);
+    transition: background-color ease-in-out $tr-time;
+
+    span {
+        color: $clr__btn--span;
+    }
+}
+
+.btn--download {
+    padding: em(16, 16) em(40, 16);
+    background-color: $clr__btn--download;
+    margin-bottom: em(16, 16);
+
+    &:hover,
+    &:focus {
+        background-color: $clr__btn--download--hover;
+    }
+}
+.btn--info {
+    padding: em(16, 16) em(30, 16);
+    background-color: $clr__btn--info;
+    &:hover,
+    &:focus {
+        background-color: $clr__btn--info--hover;
+    }
+}
+
+.shape {
+    margin-top: em(64, 16);
+    display: flex;
+    justify-content: center;
+    &__right {
+        width: 1px;
+        height: em(84, 16);
+        background-color: $shape;
+    }
+}
+.ring {
+    width: em(56, 16);
+    aspect-ratio: 1/1;
+    margin-inline: auto;
+    border-radius: 50%;
+    border: 1px solid $shape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-bg-body;
+
+    &__number {
+        font-size: var(--par); //16px
+        line-height: em(16, 16);
+        color: $clr-txt-par;
+        @extend %weight-900;
+    }
+    margin-bottom: em(64, 16);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: em(25, 16);
+    row-gap: em(25, 16);
+    margin-bottom: em(64, 16);
+
+    & > * {
+        max-width: em(150, 16);
+        border-radius: em($br-picture--mobile, 16);
+        overflow: hidden;
+    }
+}
+.ring.o2 {
+    margin-bottom: 0;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    background-color: $clr-bg-footer;
+    padding-block: em(92, 16) em(72, 16);
+    top: em(-26, 16);
+    z-index: -1;
+
+    &__container {
+        padding-inline: em(24, 16);
+    }
+
+    h2 {
+        font-size: var(--H2); //32px
+        line-height: em(36, 32);
+        @extend %weight-900;
+        color: $clr-txt-H2--footer;
+    }
+
+    p {
+        font-size: var(--footer__par); //18px
+        line-height: em(26, 18);
+        @extend %weight-500;
+        color: $clr-txt-par--footer;
+        margin-block: em(24, 16) em(32, 16);
+    }
+    .btn span {
+        color: $clr__btn--span--footer;
+    }
+    &__img {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+    }
+}

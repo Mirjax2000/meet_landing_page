@@ -1,0 +1,15 @@
+@use '../tools/' as *;
+
+// --------------------
+/*   --- root css --- */
+// --------------------
+
+:root {
+    --font-size: #{$font-size-100};
+    --H1: #{$H1--Mob};
+    --H2: #{$H2--Mob};
+    --H3: #{$H3--Mob};
+    --par: #{$par--Mob};
+    --btn: #{$btn--Mob};
+    --footer__par: #{$Footer__par--Mob};
+}

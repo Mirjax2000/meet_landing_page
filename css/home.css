@@ -1,0 +1,530 @@
+.content p, .footer p {
+  font-weight: 500;
+}
+
+.content h1, .content h2, .content h3, .btn, .ring__number, .footer h2 {
+  font-weight: 900;
+}
+
+/*   --- root css --- */
+:root {
+  --font-size: 100%;
+  --H1: 2.5rem;
+  --H2: 2rem;
+  --H3: 1rem;
+  --par: 1rem;
+  --btn: 1rem;
+  --footer__par: 1.125rem;
+}
+
+/*   --- normalize css --- */
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/*  --- reset css --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+body,
+form,
+aside,
+input,
+section,
+article {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-color: #808080;
+}
+
+/* --- typography --- */
+@font-face {
+  font-family: "Red hat display";
+  src: url(../assets/webfonts/Font-face/RedHatDisplay-Medium.woff2) format("woff2"), url(../assets/webfonts/Font-face/RedHatDisplay-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Red hat display";
+  src: url(../assets/webfonts/Font-face/RedHatDisplay-Black.woff2) format("woff2"), url(../assets/webfonts/Font-face/RedHatDisplay-Black.ttf) format("truetype");
+  font-weight: 900;
+}
+/*   --- general settings --- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+html ::-moz-selection {
+  background-color: #fafafa;
+  color: white;
+}
+html ::selection {
+  background-color: #fafafa;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-color: #808080;
+}
+
+/*  --- header --- */
+/* --- home main --- */
+.home {
+  font-optical-sizing: auto;
+  background-color: #fafafa;
+  font-family: "Red hat display", sans-serif;
+}
+
+.logo__img,
+.hero__img {
+  background-color: transparent;
+}
+
+.container {
+  max-width: 23.4375em;
+  margin-inline: auto;
+  margin-top: 3.125em;
+  overflow: hidden;
+}
+
+.logo {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 3.375em;
+}
+
+.hero {
+  text-align: center;
+}
+.hero__img {
+  max-width: 112%;
+  margin-left: -5%;
+}
+
+.content {
+  padding-inline: 1.5em;
+  margin-top: 3em;
+  text-align: center;
+}
+.content h1 {
+  font-size: var(--H1);
+  line-height: 1.1em;
+  color: #28283d;
+}
+.content h2 {
+  font-size: var(--H2);
+  line-height: 1.125em;
+  color: #28283d;
+}
+.content h3 {
+  font-size: var(--H3);
+  line-height: 1.625em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4d96a9;
+  margin-bottom: 1.5em;
+}
+.content p {
+  font-size: var(--par);
+  line-height: 1.625em;
+  color: #87879d;
+  margin-block: 1.5em 2em;
+}
+.content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: var(--btn);
+  line-height: 1.625em;
+  color: #ffffff;
+  border-radius: 1.8125em;
+  -webkit-transition: background-color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
+}
+.btn span {
+  color: #8fe3f9;
+}
+
+.btn--download {
+  padding: 1em 2.5em;
+  background-color: #4d96a9;
+  margin-bottom: 1em;
+}
+.btn--download:hover, .btn--download:focus {
+  background-color: #71c0d4;
+}
+
+.btn--info {
+  padding: 1em 1.875em;
+  background-color: #855fb1;
+}
+.btn--info:hover, .btn--info:focus {
+  background-color: #b18bdd;
+}
+
+.shape {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shape__right {
+  width: 1px;
+  height: 5.25em;
+  background-color: rgba(135, 135, 157, 0.2470588235);
+}
+
+.ring {
+  width: 3.5em;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(135, 135, 157, 0.2470588235);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  margin-bottom: 4em;
+}
+.ring__number {
+  font-size: var(--par);
+  line-height: 1em;
+  color: #87879d;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5625em;
+  row-gap: 1.5625em;
+  margin-bottom: 4em;
+}
+.gallery > * {
+  max-width: 9.375em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.ring.o2 {
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  background-color: #4d97a9;
+  padding-block: 5.75em 4.5em;
+  top: -1.625em;
+  z-index: -1;
+}
+.footer__container {
+  padding-inline: 1.5em;
+}
+.footer h2 {
+  font-size: var(--H2);
+  line-height: 1.125em;
+  color: #fafafa;
+}
+.footer p {
+  font-size: var(--footer__par);
+  line-height: 1.4444444444em;
+  color: #fafafa;
+  margin-block: 1.5em 2em;
+}
+.footer .btn span {
+  color: #d9b8ff;
+}
+.footer__img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.footer__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
+}
+
+/* mediaqueries */
+/*# sourceMappingURL=home.css.map */
