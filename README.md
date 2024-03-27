@@ -1,4 +1,4 @@
-# Frontend Mentor - Product card
+# Frontend Mentor - Meet landing page
 
 This is a solution to the [Four-card-feature](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD/steps/65fb1e422f40450f91fe67e3/challenge/start). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
