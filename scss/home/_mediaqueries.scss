@@ -5,11 +5,83 @@
 /* mediaqueries */
 // ----------------------
 
+@include mQdefault__max-width(250px) {
+    :root {
+        --font-size: #{$font-size-90};
+    }
+    .container {
+        margin-top: em(20, 14.4);
+    }
+    .logo {
+        max-width: 33.3%;
+        margin-bottom: em(20, 14.4);
+    }
 
+    .content {
+        margin-top: em(24, 14.4);
+    }
 
-// @include mQdefault__min-width(700px) {
-  
-// }
+    .shape__wrapper {
+        margin-block: em(16, 14.4);
+    }
+    .gallery {
+        margin-bottom: em(16, 14.4);
+    }
+}
+
+@include mQdefault__min-width(700px) {
+    :root {
+        --H1: #{$H1--Tbt};
+        --H2: #{$H2--Tbt};
+        --H3: #{$H3--Tbt};
+        --par: #{$par--Tbt};
+        --btn: #{$btn--Tbt};
+        --footer__par: #{$Footer__par--Tbt};
+    }
+
+    .container {
+        max-width: em(768, 16);
+    }
+    .content {
+        &__top {
+            max-width: em(457, 16);
+            margin-inline: auto;
+        }
+    }
+    .btn--download {
+        margin-right: em(16, 16);
+    }
+
+    .shape__wrapper {
+        margin-block: em(80, 16) em(67, 16);
+    }
+
+    .gallery {
+        row-gap: 0;
+        flex-wrap: nowrap;
+        gap: em(11, 16);
+
+        margin-bottom: em(48, 16);
+
+        & > * {
+            max-width: none;
+            flex-basis: 100%;
+        }
+    }
+    .content .content__down {
+        max-width: em(573, 16);
+        margin-inline: auto;
+    }
+
+    .footer {
+        &__container {
+            padding-inline: em(97, 16);
+        }
+        p {
+            margin-block: em(32, 18) em(40, 18);
+        }
+    }
+}
 
 // @include mQdefault__min-width(850px) {
 // }

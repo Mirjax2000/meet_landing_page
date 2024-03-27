@@ -18,9 +18,9 @@
 
 .container {
     max-width: em(375, 16);
+    min-width: em(200, 16);
     margin-inline: auto;
     margin-top: em(50, 16);
-    // background-color: gray;
     overflow: hidden;
 }
 
@@ -31,8 +31,6 @@
 }
 
 .hero {
-    text-align: center;
-
     &__img {
         max-width: 112%;
         margin-left: -5%;
@@ -43,6 +41,10 @@
     padding-inline: em(24, 16);
     margin-top: em(48, 16);
     text-align: center;
+
+    &__top {
+        margin-bottom: em(32, 16);
+    }
 
     h1 {
         font-size: var(--H1); // 44px
@@ -73,10 +75,7 @@
         line-height: em(26, 16);
         @extend %weight-500;
         color: $clr-txt-par;
-        margin-block: em(24, 16) em(32, 16);
-    }
-    & p:last-of-type {
-        margin-bottom: 0;
+        margin-top: em(24, 16);
     }
 }
 
@@ -116,61 +115,69 @@
     }
 }
 
-.shape {
-    margin-top: em(64, 16);
-    display: flex;
-    justify-content: center;
-    &__right {
-        width: 1px;
-        height: em(84, 16);
-        background-color: $shape;
-    }
-}
-.ring {
-    width: em(56, 16);
-    aspect-ratio: 1/1;
-    margin-inline: auto;
-    border-radius: 50%;
-    border: 1px solid $shape;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $clr-bg-body;
+.shape__wrapper {
+    margin-block: em(64, 16);
 
-    &__number {
-        font-size: var(--par); //16px
-        line-height: em(16, 16);
-        color: $clr-txt-par;
-        @extend %weight-900;
+    .shape {
+        display: flex;
+        justify-content: center;
+
+        &__right {
+            width: 1px;
+            height: em(84, 16);
+            background-color: $shape;
+        }
     }
-    margin-bottom: em(64, 16);
+
+    .ring {
+        width: em(56, 16);
+        aspect-ratio: 1/1;
+        margin-inline: auto;
+        border-radius: 50%;
+        border: 1px solid $shape;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $clr-bg-body;
+
+        &__number {
+            font-size: var(--par); //16px
+            line-height: em(16, 16);
+            color: $clr-txt-par;
+            @extend %weight-900;
+        }
+    }
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: em(25, 16);
+    gap: 7.645%;
     row-gap: em(25, 16);
     margin-bottom: em(64, 16);
 
     & > * {
-        max-width: em(150, 16);
+        max-width: 46.17737%;
         border-radius: em($br-picture--mobile, 16);
         overflow: hidden;
     }
 }
-.ring.o2 {
-    margin-bottom: 0;
+
+.shape__wrapper.two {
+    margin-block: em(39, 16) 0;
+    position: relative;
+    top: em(25, 16);
+    z-index: 100;
 }
 
 .footer {
     text-align: center;
-    position: relative;
     background-color: $clr-bg-footer;
     padding-block: em(92, 16) em(72, 16);
-    top: em(-26, 16);
-    z-index: -1;
+    position: relative;
+    z-index: 10;
 
     &__container {
         padding-inline: em(24, 16);
@@ -188,19 +195,22 @@
         line-height: em(26, 18);
         @extend %weight-500;
         color: $clr-txt-par--footer;
-        margin-block: em(24, 16) em(32, 16);
+        margin-block: em(24, 18) em(32, 18);
     }
-    .btn span {
-        color: $clr__btn--span--footer;
+
+    .btn {
+        & span {
+            color: $clr__btn--span--footer;
+        }
     }
     &__img {
         position: absolute;
         inset: 0;
         z-index: -1;
         img {
-            height: 100%;
-            width: 100%;
             object-fit: cover;
+            width: 100%;
+            height: 100%;
             opacity: 0.2;
         }
     }

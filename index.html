@@ -44,9 +44,9 @@
                 />
             </div>
 
-            <!-- <picture class="hero">
+            <picture class="hero">
                 <source
-                    media="(max-width: 768px)"
+                    media="(max-width: 699px)"
                     type="image/webp"
                     srcset="
                         ./assets/img/mobile/image-hero-410-test.webp 1x,
@@ -62,72 +62,107 @@
                     title="happy people"
                     alt="happy people"
                 />
-            </picture> -->
+            </picture>
 
             <section class="content">
-                <!-- <h1>Group Chat for Everyone</h1>
-                <p>
-                    Meet makes it easy to connect with others face-to-face
-                    virtually and collaborate across any device.
-                </p>
+                <div class="content__top">
+                    <h1>Group Chat for Everyone</h1>
+                    <p>
+                        Meet makes it easy to connect with others face-to-face
+                        virtually and collaborate across any device.
+                    </p>
+                </div>
+
                 <a href="#" class="btn btn--download"
                     >Download <span>v1.3</span></a
                 >
                 <a href="#" class="btn btn--info"> What is it?</a>
 
-                <aside class="shape">
-                    <div class="shape__left"></div>
-                    <div class="shape__right"></div>
-                    <div class="shape__mid"></div>
-                </aside>
-                <aside class="ring">
-                    <div class="ring__number"><span>01</span></div>
-                </aside>
+                <div class="shape__wrapper">
+                    <aside class="shape">
+                        <div class="shape__left"></div>
+                        <div class="shape__right"></div>
+                        <div class="shape__mid"></div>
+                    </aside>
+                    <aside class="ring">
+                        <div class="ring__number"><span>01</span></div>
+                    </aside>
+                </div>
 
                 <ul class="gallery">
                     <li class="gallery__item">
                         <img
+                            sizes="(min-width:375px) 50vw, 255px"
+                            srcset="
+                                ./assets/img/image-woman-255-test.webp 255w,
+                                ./assets/img/image-woman-510-test.webp 510w
+                            "
                             src="./assets/img/image-woman-255-test.webp"
+                            loading="lazy"
+                            decoding="sync"
                             alt="woman with laptop"
                         />
                     </li>
                     <li class="gallery__item">
                         <img
+                            sizes="(min-width:375px) 50vw, 255px"
+                            srcset="
+                                ./assets/img/image-womens-255-test.webp 255w,
+                                ./assets/img/image-womens-510-test.webp 510w
+                            "
                             src="./assets/img/image-womens-255-test.webp"
+                            loading="lazy"
+                            decoding="sync"
                             alt="old ladies watching pictures on phone"
                         />
                     </li>
                     <li class="gallery__item">
                         <img
+                            sizes="(min-width:375px) 50vw, 255px"
+                            srcset="
+                                ./assets/img/image-men-255-test.webp 255w,
+                                ./assets/img/image-men-510-test.webp 510w
+                            "
                             src="./assets/img/image-men-255-test.webp"
+                            loading="lazy"
+                            decoding="sync"
                             alt="student and his teacehr on e-conference"
                         />
                     </li>
                     <li class="gallery__item">
                         <img
+                            sizes="(min-width:375px) 50vw, 255px"
+                            srcset="
+                                ./assets/img/image-man-255-test.webp 255w,
+                                ./assets/img/image-man-510-test.webp 510w
+                            "
                             src="./assets/img/image-man-255-test.webp"
+                            loading="lazy"
+                            decoding="sync"
                             alt="a man watching phone"
                         />
                     </li>
-                </ul> -->
-
-                <h3>Built for modern use</h3>
-                <h2>Smarter meetings, all in one place</h2>
-                <p>
-                    Send messages, share files, show your screen, and record
-                    your meetings — all in one workspace. Control who can join
-                    with invite-only team access, data encryption, and data
-                    export.
-                </p>
-
-                <aside class="shape">
-                    <div class="shape__left"></div>
-                    <div class="shape__right"></div>
-                    <div class="shape__mid"></div>
-                </aside>
-                <aside class="ring o2">
-                    <div class="ring__number"><span>02</span></div>
-                </aside>
+                </ul>
+                <div class="content__down">
+                    <h3>Built for modern use</h3>
+                    <h2>Smarter meetings, all in one place</h2>
+                    <p>
+                        Send messages, share files, show your screen, and record
+                        your meetings — all in one workspace. Control who can
+                        join with invite-only team access, data encryption, and
+                        data export.
+                    </p>
+                </div>
+                <div class="shape__wrapper two">
+                    <aside class="shape">
+                        <div class="shape__left"></div>
+                        <div class="shape__right"></div>
+                        <div class="shape__mid"></div>
+                    </aside>
+                    <aside class="ring">
+                        <div class="ring__number"><span>02</span></div>
+                    </aside>
+                </div>
             </section>
 
             <footer class="footer">
@@ -143,7 +178,18 @@
                 </article>
 
                 <div class="footer__img">
-                    <img src="./assets/img/image-footer-384-test.webp" alt="" />
+                    <picture class="card__picture">
+                        <source
+                            media="(min-width: 650px)"
+                            type="image/webp"
+                            srcset="./assets/img/image-footer-768-test.webp"
+                        />
+                        <img
+                            src="./assets/img/image-footer-384-test.webp"
+                            decoding="sync"
+                            loading="lazy"
+                        />
+                    </picture>
                 </div>
             </footer>
         </main>
