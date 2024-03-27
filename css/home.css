@@ -611,7 +611,6 @@ img {
   }
   .hero {
     display: block;
-    width: 100%;
     margin: 0 auto;
   }
   .hero__img {
@@ -670,7 +669,6 @@ img {
 }
 @media only screen and (min-width: 1330px) {
   .hero {
-    display: block;
     position: relative;
   }
   .hero::after, .hero::before {

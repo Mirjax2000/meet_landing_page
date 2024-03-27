@@ -99,7 +99,6 @@
     }
     .hero {
         display: block;
-        width: 100%;
         margin: 0 auto;
         &__img {
             margin: 0;
@@ -160,7 +159,6 @@
 
 @include mQdefault__min-width(1330px) {
     .hero {
-        display: block;
         position: relative;
 
         &::after,
