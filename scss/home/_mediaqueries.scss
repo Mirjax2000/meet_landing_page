@@ -84,7 +84,7 @@
     }
 }
 
-@include mQdefault__min-width(1330px) {
+@include mQdefault__min-width(1024px) {
     :root {
         --H1: #{$H1--PC};
         --H2: #{$H2--PC};
@@ -97,30 +97,12 @@
     .container {
         max-width: em(1440, 16);
     }
-
     .hero {
         display: block;
-        position: relative;
-
-        &::after,
-        &::before {
-            content: '';
-            position: absolute;
-            background-repeat: no-repeat;
-            width: em(394, 16);
-            height: em(303, 16);
-            top: 0;
-        }
-        &::before {
-            background-image: url(../assets/img/image-hero-left.webp);
-            left: em(-25, 16);
-        }
-        &::after {
-            background-image: url(../assets/img/image-hero-right.webp);
-            right: em(-25, 16);
-        }
-        img {
-            display: none;
+        width: 100%;
+        margin: 0 auto;
+        &__img {
+            margin: 0;
         }
     }
 
@@ -172,6 +154,34 @@
         }
         p {
             margin: 0;
+        }
+    }
+}
+
+@include mQdefault__min-width(1330px) {
+    .hero {
+        display: block;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            width: em(394, 16);
+            height: em(303, 16);
+            top: 0;
+        }
+        &::before {
+            background-image: url(../assets/img/image-hero-left.webp);
+            left: em(-25, 16);
+        }
+        &::after {
+            background-image: url(../assets/img/image-hero-right.webp);
+            right: em(-25, 16);
+        }
+        img {
+            display: none;
         }
     }
 }

@@ -355,6 +355,9 @@ img {
   margin-bottom: 3.375em;
 }
 
+.hero {
+  text-align: center;
+}
 .hero__img {
   max-width: 112%;
   margin-left: -5%;
@@ -594,7 +597,7 @@ img {
     margin-block: 1.7777777778em 2.2222222222em;
   }
 }
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1024px) {
   :root {
     --H1: 4rem;
     --H2: 2.5rem;
@@ -608,26 +611,11 @@ img {
   }
   .hero {
     display: block;
-    position: relative;
+    width: 100%;
+    margin: 0 auto;
   }
-  .hero::after, .hero::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 24.625em;
-    height: 18.9375em;
-    top: 0;
-  }
-  .hero::before {
-    background-image: url(../assets/img/image-hero-left.webp);
-    left: -1.5625em;
-  }
-  .hero::after {
-    background-image: url(../assets/img/image-hero-right.webp);
-    right: -1.5625em;
-  }
-  .hero img {
-    display: none;
+  .hero__img {
+    margin: 0;
   }
   .content__top {
     max-width: 33.75em;
@@ -678,6 +666,31 @@ img {
   }
   .footer p {
     margin: 0;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  .hero {
+    display: block;
+    position: relative;
+  }
+  .hero::after, .hero::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 24.625em;
+    height: 18.9375em;
+    top: 0;
+  }
+  .hero::before {
+    background-image: url(../assets/img/image-hero-left.webp);
+    left: -1.5625em;
+  }
+  .hero::after {
+    background-image: url(../assets/img/image-hero-right.webp);
+    right: -1.5625em;
+  }
+  .hero img {
+    display: none;
   }
 }
 /*# sourceMappingURL=home.css.map */
