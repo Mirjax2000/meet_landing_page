@@ -593,4 +593,17 @@ img {
     margin-block: 1.7777777778em 2.2222222222em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  :root {
+    --H1: 4rem;
+    --H2: 2.5rem;
+    --H3: 1.1rem;
+    --par: 1.125rem;
+    --btn: 1rem;
+    --footer__par: 1.125rem;
+  }
+  .container {
+    max-width: 90em;
+  }
+}
 /*# sourceMappingURL=home.css.map */

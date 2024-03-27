@@ -117,26 +117,27 @@ $font-size-80: 80%;
 // font-sizes
 $H1--Mob: rem(40, 0);
 $H1--Tbt: rem(48, 0);
-$H1--PC: rem(13, 10);
+$H1--PC: rem(64, 0);
 
 $H2--Mob: rem(32, 0);
 $H2--Tbt: rem(40, 0);
-$H2--PC: rem(11, 10);
+$H2--PC: rem(40, 0);
 
 $H3--Mob: rem(16, 0);
 $H3--Tbt: rem(16, 0);
-$H3--PC: rem(11, 10);
+$H3--PC: rem(16, 10);
 
 $par--Mob: rem(16, 0);
 $par--Tbt: rem(16, 0);
-$par--PC: rem(20, 10);
+$par--PC: rem(18, 0);
 
 $btn--Mob: rem(16, 0);
 $btn--Tbt: rem(16, 0);
-$btn--PC: rem(13, 10);
+$btn--PC: rem(16, 0);
 
 $Footer__par--Mob: rem(18, 0);
 $Footer__par--Tbt: rem(18, 0);
+$Footer__par--PC: rem(18, 0);
 
 // --------------------------------
 $pages: home, gallery, blog, contact, buttons;

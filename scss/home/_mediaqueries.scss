@@ -83,5 +83,18 @@
     }
 }
 
-// @include mQdefault__min-width(850px) {
-// }
+@include mQdefault__min-width(1024px) {
+    :root {
+        --H1: #{$H1--PC};
+        --H2: #{$H2--PC};
+        --H3: #{$H3--PC};
+        --par: #{$par--PC};
+        --btn: #{$btn--PC};
+        --footer__par: #{$Footer__par--PC};
+    }
+
+    .container {
+        max-width: em(1440, 16);
+    }
+    
+}
