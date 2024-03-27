@@ -698,6 +698,12 @@ img {
   .content {
     margin-top: 6.25em;
   }
+  .content h1 {
+    line-height: 1em;
+  }
+  .content p {
+    line-height: 1.4444444444em;
+  }
   .footer {
     padding-block: 7.25em 6.5em;
   }

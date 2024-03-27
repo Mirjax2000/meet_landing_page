@@ -190,6 +190,12 @@
 
     .content {
         margin-top: em(100, 16);
+        h1 {
+            line-height: em(64, 64);
+        }
+        p {
+            line-height: em(26, 18);
+        }
     }
     .footer {
         padding-block: em(116, 16) em(104, 16);
