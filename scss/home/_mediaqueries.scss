@@ -182,6 +182,7 @@
         &::after {
             background-image: url(../assets/img/image-hero-right.webp);
             right: em(-25, 16);
+            top: em(55, 16);
         }
         img {
             display: none;
