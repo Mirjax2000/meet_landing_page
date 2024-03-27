@@ -698,5 +698,8 @@ img {
   .content {
     margin-top: 6.25em;
   }
+  .footer {
+    padding-block: 7.25em 6.5em;
+  }
 }
 /*# sourceMappingURL=home.css.map */
