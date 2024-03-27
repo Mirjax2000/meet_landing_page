@@ -119,6 +119,8 @@
     .gallery {
         gap: em(30, 16);
         margin-bottom: em(80, 16);
+        max-width: em(1110, 16);
+        margin-inline: auto;
     }
 
     .content .content__down {
