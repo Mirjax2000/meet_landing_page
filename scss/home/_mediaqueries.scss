@@ -50,6 +50,7 @@
     }
     .btn--download {
         margin-right: em(16, 16);
+        margin-bottom: 0;
     }
 
     .shape__wrapper {
@@ -83,7 +84,7 @@
     }
 }
 
-@include mQdefault__min-width(1024px) {
+@include mQdefault__min-width(1330px) {
     :root {
         --H1: #{$H1--PC};
         --H2: #{$H2--PC};
@@ -96,5 +97,81 @@
     .container {
         max-width: em(1440, 16);
     }
-    
+
+    .hero {
+        display: block;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            width: em(394, 16);
+            height: em(303, 16);
+            top: 0;
+        }
+        &::before {
+            background-image: url(../assets/img/image-hero-left.webp);
+            left: em(-25, 16);
+        }
+        &::after {
+            background-image: url(../assets/img/image-hero-right.webp);
+            right: em(-25, 16);
+        }
+        img {
+            display: none;
+        }
+    }
+
+    .content {
+        &__top {
+            max-width: em(540, 16);
+        }
+        p {
+            margin-block: em(34, 18) em(32, 18);
+        }
+    }
+    .shape__wrapper {
+        margin-block: em(115, 16) em(64, 16);
+    }
+    .gallery {
+        gap: em(30, 16);
+        margin-bottom: em(80, 16);
+    }
+
+    .content .content__down {
+        max-width: em(540, 16);
+        h3 {
+            margin-bottom: em(16, 16);
+        }
+        h2 {
+            max-width: 15ch;
+            margin-inline: auto;
+        }
+    }
+
+    .footer {
+        &__container {
+            max-width: em(1110, 16);
+            margin-inline: auto;
+            padding-inline: 0;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+
+            h2 {
+                flex-basis: 33.3%;
+            }
+            p {
+                flex-basis: 33.3%;
+            }
+            div {
+                align-self: center;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
 }
