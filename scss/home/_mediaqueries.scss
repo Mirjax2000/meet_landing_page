@@ -160,6 +160,9 @@
 }
 
 @include mQdefault__min-width(1330px) {
+    .container {
+        margin-top: em(80, 16);
+    }
     .hero {
         position: relative;
 
@@ -183,5 +186,9 @@
         img {
             display: none;
         }
+    }
+
+    .content {
+        margin-top: em(100, 16);
     }
 }

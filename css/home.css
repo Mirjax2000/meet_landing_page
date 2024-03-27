@@ -670,6 +670,9 @@ img {
   }
 }
 @media only screen and (min-width: 1330px) {
+  .container {
+    margin-top: 5em;
+  }
   .hero {
     position: relative;
   }
@@ -691,6 +694,9 @@ img {
   }
   .hero img {
     display: none;
+  }
+  .content {
+    margin-top: 6.25em;
   }
 }
 /*# sourceMappingURL=home.css.map */
